@@ -1,0 +1,13 @@
+apiVerson: v1
+kind: Pod
+metadata:
+  name: label-pracctice
+  labels:
+    env: testing
+    department: devops
+specs:
+  containers:
+    - name: container1
+      image: ubuntu
+      command: ["/bin/bash", "-c", "while true do echo this this label selector practice; sleep 5; done"]
+    
